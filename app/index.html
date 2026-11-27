@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Friday Price Check — 12 Real Deals, Checked 27 Nov 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="mast">
+<div class="kicker">BLACK FRIDAY &nbsp;•&nbsp; CYBER MONDAY &nbsp;•&nbsp; USA</div>
+<h1>BLACK FRIDAY <em>PRICE CHECK</em></h1>
+<p class="sub">The deal finder that shows its work — every price checked today, every deal judged honestly.</p>
+</header>
+<div class="strip" id="date-strip"><span>DATE CHECK: ALL PRICES CHECKED 27 NOV 2026</span><span>12 DEALS</span><span>4 STORES</span><span>$2,331 TOTAL SAVINGS</span></div>
+<div class="stats">
+<div class="stat"><b id="stat-deals">12</b><span>Deals checked</span></div>
+<div class="stat"><b id="stat-real">8</b><span>Real deals</span></div>
+<div class="stat"><b id="stat-avg">41%</b><span>Average discount</span></div>
+<div class="stat"><b id="stat-saved">$2,331</b><span>Total savings</span></div>
+<div class="stat"><b id="stat-stores">4</b><span>Stores</span></div>
+</div>
+<main class="wrap">
+<h2 class="sec">Top 3 hero deals</h2>
+<p class="sec-sub">The three biggest, most-verified cuts of Black Friday 2026 — each with its own drawn illustration, price, and source.</p>
+<section class="heroes" id="heroes"></section>
+<h2 class="sec">Find your deal</h2>
+<p class="sec-sub">Search and filter all 12 deals by category, store, and discount. Every card carries its verdict: is it really a deal?</p>
+<div class="filters">
+<input type="search" id="q" placeholder="Search deals — try &quot;headphones&quot;, &quot;TV&quot;, &quot;Apple&quot;…" aria-label="Search deals">
+<div class="frow"><label>Category:</label><span id="cat-row"></span></div>
+<div class="frow"><label>Store:</label><span id="store-row"></span></div>
+<div class="frow"><label for="mind">Min. discount:</label><select id="mind"><option value="0">Any</option><option value="25">25%+</option><option value="40">40%+</option><option value="50">50%+</option></select>
+<label for="sort">Sort by:</label><select id="sort"><option value="disc">Biggest discount</option><option value="save">Biggest saving</option><option value="price">Lowest price</option></select>
+<span id="count">12 of 12 deals shown</span></div>
+</div>
+<section class="grid" id="grid" style="margin-top:14px"></section>
+<h2 class="sec">All 12 deals, ranked by discount</h2>
+<p class="sec-sub">The numbered list. Number 1 is the deepest cut; number 12 is the honest warning.</p>
+<ol class="ranked" id="ranked"></ol>
+<h2 class="sec">How every price was checked</h2>
+<div class="method">
+<p><b>Checked 27 Nov 2026, 14:05 WIB.</b> Each sale price and list price above was read on 27 Nov 2026 from live Black Friday listings for that store — Amazon Black Friday Week, Walmart Black Friday (23–29 Nov), Best Buy Black Friday (from 19 Nov), and Target Black Friday (22–29 Nov) — cross-checked across at least two independent deal trackers that read the store's own product pages that day.</p>
+<p><b>What counts as a real deal.</b> REAL DEAL means 40%+ off, or a lowest-ever price with a large dollar saving. GOOD DEAL means 25–39% off a product people actually buy. WEAK DEAL means a small cut on a rarely-discounted product — listed honestly instead of hyped. One deal in this list (Nintendo Switch 2, 6% off) is flagged WEAK on purpose: a finder that never says no is an ad, not a finder.</p>
+<p><b>Store links</b> go to the store's own search for the exact product, so the link opens the matching product at that store. Prices can change and stock can run out — verify the final price at checkout before you buy. Black Friday is 27 Nov 2026; Cyber Monday is 30 Nov 2026.</p>
+<p><b>Images</b> are illustrations drawn in code (inline SVG) — no photos, no stock, no network requests. This page works fully offline from its own files.</p>
+</div>
+</main>
+<footer id="foot">Black Friday Price Check — 12 real deals, checked 27 Nov 2026, 14:05 WIB. Prices subject to change; verify at checkout.</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* Black Friday Price Check — styles. System serif stack, no web fonts. */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #fff8ec; color: #1a1a1a; line-height: 1.5; }
+header.mast { border-bottom: 5px double #111; padding: 18px 16px 12px; text-align: center; background: #111; color: #fff; }
+header.mast .kicker { font-family: Arial, Helvetica, sans-serif; letter-spacing: .35em; font-size: 11px; color: #fbbf24; }
+header.mast h1 { font-size: clamp(34px, 7vw, 64px); line-height: 1.02; margin: 8px 0 4px; }
+header.mast h1 em { color: #fbbf24; font-style: normal; }
+header.mast .sub { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #e5e5e5; }
+.strip { background: #fbbf24; color: #111; font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 13px; text-align: center; padding: 9px 12px; }
+.strip span { margin: 0 10px; white-space: nowrap; }
+.stats { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; padding: 16px 12px; font-family: Arial, Helvetica, sans-serif; }
+.stat { border: 2px solid #111; padding: 10px 16px; text-align: center; min-width: 130px; background: #fff; }
+.stat b { font-size: 26px; display: block; }
+.stat span { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #555; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 14px 40px; }
+h2.sec { font-size: 28px; margin: 26px 0 4px; border-bottom: 3px solid #111; padding-bottom: 6px; }
+.sec-sub { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #444; margin-bottom: 14px; }
+.heroes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.card { border: 2px solid #111; background: #fff; display: flex; flex-direction: column; overflow: hidden; }
+.card .art { position: relative; line-height: 0; }
+.card .art svg { width: 100%; height: auto; display: block; }
+.disc-badge { position: absolute; top: 10px; right: 10px; background: #dc2626; color: #fff; font-family: Arial, Helvetica, sans-serif; font-weight: 800; font-size: 18px; padding: 6px 10px; border-radius: 999px; }
+.card-body { padding: 14px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.meta { display: flex; gap: 8px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; }
+.store { background: #111; color: #fff; padding: 3px 8px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.cat { border: 1px solid #111; padding: 3px 8px; }
+.card h3 { font-size: 20px; line-height: 1.2; }
+.hero h3 { font-size: 24px; }
+.blurb { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333; }
+.prices { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.sale { font-size: 30px; font-weight: 700; color: #b91c1c; }
+.was { font-size: 17px; color: #666; text-decoration: line-through; }
+.save { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; background: #dcfce7; padding: 3px 8px; }
+.verdict { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; padding: 8px; border: 2px solid; }
+.v-real { background: #dcfce7; border-color: #15803d; color: #14532d; }
+.v-good { background: #fef9c3; border-color: #a16207; color: #713f12; }
+.v-weak { background: #fee2e2; border-color: #b91c1c; color: #7f1d1d; }
+.checked, .source { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #555; }
+.buy { margin-top: auto; display: block; text-align: center; background: #111; color: #fff; font-family: Arial, Helvetica, sans-serif; font-weight: 700; text-decoration: none; padding: 11px; }
+.buy:hover { background: #b91c1c; }
+.filters { border: 2px solid #111; background: #fff; padding: 14px; display: flex; flex-direction: column; gap: 10px; font-family: Arial, Helvetica, sans-serif; }
+.filters input[type=search] { font-size: 16px; padding: 10px; border: 2px solid #111; width: 100%; }
+.frow { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.frow label { font-weight: 700; font-size: 13px; margin-right: 2px; }
+.chip { border: 2px solid #111; background: #fff; padding: 6px 12px; cursor: pointer; font-weight: 700; font-size: 13px; }
+.chip.on { background: #111; color: #fff; }
+.filters select { font-size: 14px; padding: 7px; border: 2px solid #111; }
+#count { font-weight: 700; }
+.ranked { border: 2px solid #111; background: #fff; padding: 6px 18px; }
+.ranked li { padding: 12px 4px; border-bottom: 1px solid #ddd; font-size: 16px; }
+.ranked li:last-child { border-bottom: none; }
+.ranked .rprice { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #444; }
+.ranked .rprice b { color: #b91c1c; font-size: 17px; }
+.method { border: 2px solid #111; background: #fff; padding: 16px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+.method p { margin-bottom: 8px; }
+footer { text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #555; padding: 22px 12px; border-top: 3px solid #111; }
+@media (max-width: 820px) { .heroes, .grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .heroes, .grid { grid-template-columns: 1fr; } .stat { min-width: 44%; } }
